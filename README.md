@@ -1,7 +1,7 @@
 web_server
 ==========
 
-A very basic web sever 
+A very basic web server for learning purposes
 
 
 #server.rb
