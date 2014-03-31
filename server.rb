@@ -6,8 +6,8 @@ class Server
 	@host = nil
 	@port = nil
 
-	def initialize(port)
-		@host = '127.0.0.1'
+	def initialize(host,port)
+		@host = host
 		@port = port
 	end
 
@@ -31,7 +31,7 @@ class Server
 	end
 end
 
-r = Server.new(2000)
+r = Server.new('127.0.0.1',2000)
 r.run
 
 
