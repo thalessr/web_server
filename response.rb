@@ -6,7 +6,8 @@ class Response
 			response = if File.exists?(filename)
 			File.read(filename)
 			else
-				"404 - File Not Found"
+			 puts "404 - File Not Found"
+			 client.puts("404 - File Not Found")
 			end
 			client.puts(response)
 			client.close                                    
